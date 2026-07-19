@@ -183,11 +183,11 @@ document.querySelectorAll(".version-bold-menu-toggle").forEach((button) => {
     document.body.classList.toggle("bold-nav-open", !isOpen);
   });
 
-  /* Follow touch/pointer selections before the animated drawer can swallow the click. */
   nav.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("pointerup", () => {
-      if (!document.body.classList.contains("bold-nav-open")) return;
-      window.location.href = link.href;
+    link.addEventListener("click", () => {
+      /* Close the mobile nav after choosing a page. */
+      button.setAttribute("aria-expanded", "false");
+      document.body.classList.remove("bold-nav-open");
     });
   });
 

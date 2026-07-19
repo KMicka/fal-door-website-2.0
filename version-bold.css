@@ -600,39 +600,6 @@ body.fal-intro-active {
   overflow: hidden;
 }
 
-/* Reliable homepage directory: direct links work without the animated menu. */
-.fal-site-directory {
-  position: relative;
-  z-index: 20;
-  display: flex;
-  gap: 8px;
-  padding: 10px clamp(16px, 3vw, 42px);
-  overflow-x: auto;
-  border-bottom: 1px solid rgba(185, 151, 87, 0.22);
-  background: #120d09;
-  scrollbar-width: thin;
-}
-
-.fal-site-directory a {
-  flex: 0 0 auto;
-  padding: 9px 13px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 999px;
-  color: #fffaf5;
-  font-size: 0.76rem;
-  font-weight: 800;
-  line-height: 1;
-  text-decoration: none;
-}
-
-.fal-site-directory a:hover,
-.fal-site-directory a:focus-visible,
-.fal-site-directory a[aria-current="page"] {
-  border-color: #b99757;
-  background: #b99757;
-  color: #17100b;
-}
-
 /* Cinematic homepage entrance */
 .fal-intro {
   position: fixed;

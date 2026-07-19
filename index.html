@@ -34,13 +34,56 @@
       referrerpolicy="no-referrer"
     />
     <!-- Version stylesheet: all bold-version layout, color, type, and responsive rules. -->
-    <link rel="stylesheet" href="version-bold.css?v=20260719sitehub" />
+    <link rel="stylesheet" href="version-bold.css?v=20260629cta" />
     <!-- Shared floating-social stylesheet: reused by both visual versions. -->
     <link rel="stylesheet" href="shared-floating.css?v=20260628a" />
     <link rel="canonical" href="https://faldoors.al/" />
     <meta property="og:url" content="https://faldoors.al/" />
   </head>
   <body class="bold-home-page">
+    <!-- CINEMATIC INTRO: shown once për browsing session before the bold homepage. -->
+    <div class="fal-intro" id="falIntro" aria-label="FAL DOORS prezantim">
+      <div
+        class="fal-intro__panel fal-intro__panel--left"
+        aria-hidden="true"
+      ></div>
+      <div
+        class="fal-intro__panel fal-intro__panel--right"
+        aria-hidden="true"
+      ></div>
+      <div class="fal-intro__glow" aria-hidden="true"></div>
+      <div class="fal-intro__frame">
+        <video id="falIntroVideo" muted playsinline preload="auto">
+          <source src="images/fal-door-intro-9s-1080p.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="fal-intro__threshold" aria-hidden="true">
+        <span class="fal-intro__threshold-mark">FAL</span>
+        <i></i>
+        <span class="fal-intro__threshold-copy">HYRJE ME IDENTITET</span>
+      </div>
+      <div class="fal-intro__topline" aria-hidden="true">
+        <span>FAL DOORS</span><i></i><span>EST. ALBANIA</span>
+      </div>
+      <button
+        class="fal-intro__skip"
+        type="button"
+        aria-label="Kalo prezantimin"
+      >
+        <span>Kalo</span
+        ><i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i>
+      </button>
+      <button
+        class="fal-intro__sound"
+        type="button"
+        aria-label="Aktivizo zërin"
+        aria-pressed="false"
+      >
+        <i class="fa-solid fa-volume-xmark" aria-hidden="true"></i
+        ><span>Zëri</span>
+      </button>
+      <div class="fal-intro__progress" aria-hidden="true"><i></i></div>
+    </div>
     <!-- PAGE STRUCTURE: floating social links, header/navigation, page-specific main content, footer, shared JavaScript. -->
     <!-- FLOATING SOCIAL BAR: quick external links that stay visible while scrolling. -->
     <div class="floating-social" aria-label="Linqë të shpejta sociale">
@@ -180,17 +223,6 @@
         </div>
       </div>
     </header>
-
-    <nav class="fal-site-directory" aria-label="Të gjitha faqet">
-      <a href="index.html" aria-current="page">Kryefaqja</a>
-      <a href="version-bold-about.html">Rreth nesh</a>
-      <a href="version-bold-products.html">Produktet</a>
-      <a href="version-bold-projects.html">Projektet</a>
-      <a href="version-bold-gallery.html">Galeria</a>
-      <a href="version-bold-create.html">Krijo hyrjen</a>
-      <a href="version-bold-contact.html">Kontakt</a>
-      <a href="version-bold-quote.html">Kërkesë ofertë</a>
-    </nav>
 
     <!-- MAIN CONTENT: unique content for this page. -->
     <main class="version-bold-home">
@@ -1213,7 +1245,7 @@
     </footer>
     <!-- SHARED SCRIPT: enables nav, language, form, and configurator interactions. -->
     <script src="language.js?v=20260701k"></script>
-    <script src="version-bold.js?v=20260719navfix4"></script>
+    <script src="version-bold.js?v=20260629cta"></script>
   </body>
 </html>
 
