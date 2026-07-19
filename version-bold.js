@@ -184,10 +184,15 @@ document.querySelectorAll(".version-bold-menu-toggle").forEach((button) => {
   });
 
   nav.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", () => {
-      /* Close the mobile nav after choosing a page. */
+    link.addEventListener("click", (event) => {
+      /* Close the drawer and explicitly follow the chosen page on touch layouts. */
       button.setAttribute("aria-expanded", "false");
       document.body.classList.remove("bold-nav-open");
+
+      if (window.matchMedia("(max-width: 1050px)").matches) {
+        event.preventDefault();
+        window.location.assign(link.href);
+      }
     });
   });
 
