@@ -1,0 +1,1255 @@
+﻿<!doctype html>
+<html lang="sq">
+  <head>
+    <!-- HEAD: browser metadata, SEO/social preview tags, fonts, icon library, and page styles. -->
+    <!-- Character encoding: supports normal text rendering across browsers. -->
+    <meta charset="UTF-8" />
+    <!-- Viewport: makes CSS media queries and mobile scaling work correctly. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="FAL DOORS krijon dyer të personalizuara, elegante dhe të qëndrueshme për shtëpi, vila dhe ambiente biznesi."
+    />
+    <meta property="og:title" content="FAL DOORS - Dyer me porosi" />
+    <meta
+      property="og:description"
+      content="FAL DOORS krijon dyer të personalizuara, elegante dhe të qëndrueshme për shtëpi, vila dhe ambiente biznesi."
+    />
+    <meta property="og:image" content="https://faldoors.al/images/fal-doors.jpg" />
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+    <title>FAL DOORS - Dyer me porosi</title>
+    <!-- Fonts: preconnect speeds up Google Fonts loading before the stylesheet request. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=optional"
+      rel="stylesheet"
+    />
+    <!-- Icons: Font Awesome supplies the nav, CTA, contact, feature, and social icons. -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Version stylesheet: all bold-version layout, color, type, and responsive rules. -->
+    <link rel="stylesheet" href="version-bold.css?v=20260629cta" />
+    <!-- Shared floating-social stylesheet: reused by both visual versions. -->
+    <link rel="stylesheet" href="shared-floating.css?v=20260628a" />
+    <link rel="canonical" href="https://faldoors.al/" />
+    <meta property="og:url" content="https://faldoors.al/" />
+  </head>
+  <body class="bold-home-page">
+    <!-- CINEMATIC INTRO: shown once për browsing session before the bold homepage. -->
+    <div class="fal-intro" id="falIntro" aria-label="FAL DOORS prezantim">
+      <div
+        class="fal-intro__panel fal-intro__panel--left"
+        aria-hidden="true"
+      ></div>
+      <div
+        class="fal-intro__panel fal-intro__panel--right"
+        aria-hidden="true"
+      ></div>
+      <div class="fal-intro__glow" aria-hidden="true"></div>
+      <div class="fal-intro__frame">
+        <video id="falIntroVideo" muted playsinline preload="auto">
+          <source src="images/fal-door-intro-9s-1080p.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="fal-intro__threshold" aria-hidden="true">
+        <span class="fal-intro__threshold-mark">FAL</span>
+        <i></i>
+        <span class="fal-intro__threshold-copy">HYRJE ME IDENTITET</span>
+      </div>
+      <div class="fal-intro__topline" aria-hidden="true">
+        <span>FAL DOORS</span><i></i><span>EST. ALBANIA</span>
+      </div>
+      <button
+        class="fal-intro__skip"
+        type="button"
+        aria-label="Kalo prezantimin"
+      >
+        <span>Kalo</span
+        ><i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i>
+      </button>
+      <button
+        class="fal-intro__sound"
+        type="button"
+        aria-label="Aktivizo zërin"
+        aria-pressed="false"
+      >
+        <i class="fa-solid fa-volume-xmark" aria-hidden="true"></i
+        ><span>Zëri</span>
+      </button>
+      <div class="fal-intro__progress" aria-hidden="true"><i></i></div>
+    </div>
+    <!-- PAGE STRUCTURE: floating social links, header/navigation, page-specific main content, footer, shared JavaScript. -->
+    <!-- FLOATING SOCIAL BAR: quick external links that stay visible while scrolling. -->
+    <div class="floating-social" aria-label="Linqë të shpejta sociale">
+      <!-- SOCIAL LINK: Facebook page opens in a new tab. -->
+      <a
+        class="floating-social__btn"
+        href="https://www.facebook.com/p/FAL-Doors-61554308700425/"
+        target="_blank"
+        rel="noopener"
+        aria-label="Facebook"
+      >
+        <!-- Social icon: Facebook -->
+        <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+        <span class="u-visually-hidden">Facebook</span>
+      </a>
+      <!-- SOCIAL LINK: Instagram profile opens in a new tab. -->
+      <a
+        class="floating-social__btn"
+        href="https://www.instagram.com/fal.doors/?hl=en"
+        target="_blank"
+        rel="noopener"
+        aria-label="Instagram"
+      >
+        <!-- Social icon: Instagram -->
+        <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+        <span class="u-visually-hidden">Instagram</span>
+      </a>
+      <!-- SOCIAL LINK: TikTok profile opens in a new tab. -->
+      <a
+        class="floating-social__btn"
+        href="https://www.tiktok.com/@fal.doors"
+        target="_blank"
+        rel="noopener"
+        aria-label="TikTok"
+      >
+        <!-- Social icon: TikTok -->
+        <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
+        <span class="u-visually-hidden">TikTok</span>
+      </a>
+      <!-- SOCIAL LINK: LinkedIn company page opens in a new tab. -->
+      <a
+        class="floating-social__btn"
+        href="https://www.linkedin.com/company/fal-doors/?trk=public_post_feed-actor-name&originalSubdomain=al"
+        target="_blank"
+        rel="noopener"
+        aria-label="LinkedIn"
+      >
+        <!-- Social icon: LinkedIn -->
+        <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+        <span class="u-visually-hidden">LinkedIn</span>
+      </a>
+      <!-- SOCIAL LINK: WhatsApp opens a direct chat. -->
+      <a
+        class="floating-social__btn"
+        href="https://wa.me/355696032648"
+        target="_blank"
+        rel="noopener"
+        aria-label="WhatsApp"
+      >
+        <!-- Social icon: WhatsApp -->
+        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+        <span class="u-visually-hidden">WhatsApp</span>
+      </a>
+      <!-- BACK TO TOP: version-bold.js scrolls the page to the top when this compact arrow is clicked. -->
+      <button
+        class="floating-social__top"
+        type="button"
+        aria-label="Kthehu në krye"
+      >
+        <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+      </button>
+    </div>
+    <!-- SITE HEADER: logo, primary navigation, quote CTA, and language selector. -->
+    <header class="version-bold-header">
+      <!-- LOGO LINK: returns users to the matching version homepage. -->
+      <a
+        class="version-bold-logo"
+        href="index.html"
+        aria-label="FAL DOORS Kryefaqja"
+      >
+        <!-- Logo image: brand mark used as the visual home link. -->
+        <img
+          src="images/fal_doors_nav.png"
+          alt="FAL DOORS"
+          width="142"
+          height="48"
+        />
+      </a>
+      <!-- MOBILE MENU BUTTON: toggles the collapsed navigation on small screens. -->
+      <button
+        class="version-bold-menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="bold-main-nav"
+        aria-label="Hap menunë"
+      >
+        <!-- Icon bars: CSS turns these three empty elements into the hamburger lines. -->
+        <i></i><i></i><i></i>
+      </button>
+
+      <!-- PRIMARY NAVIGATION: main site pages for this version. -->
+      <nav
+        class="version-bold-nav"
+        id="bold-main-nav"
+        aria-label="Navigimi kryesor"
+      >
+        <!-- .is-active tells CSS which nav item should show the current-page statë. -->
+        <a class="is-active" href="index.html">KRYEFAQJA</a>
+        <a href="version-bold-about.html">RRETH NESH</a>
+        <a href="version-bold-products.html">PRODUKTET</a>
+        <a href="version-bold-projects.html">PROJEKTET</a>
+        <a href="version-bold-gallery.html">GALERIA</a>
+        <a href="version-bold-create.html">KRIJO HYRJEN</a>
+        <a href="version-bold-contact.html">KONTAKT</a>
+      </nav>
+
+      <!-- LOCKED: Do not change navbar/language placement unless the client explicitly asks. -->
+      <!-- HEADER ACTIONS: quote shortcut and language controls. -->
+      <div class="version-bold-actions">
+        <!-- Quote shortcut: kept outside the main nav so it remains a business CTA. -->
+        <a class="version-bold-quote-link" href="version-bold-quote.html"
+          >Kërkesë ofertë</a
+        >
+        <div class="version-bold-languages" aria-label="Zgjedhja e gjuhës">
+          <!-- Language buttons: JS marks the selected button and reports whether the language is available. -->
+          <button type="button" data-lang="sq">
+            <img src="images/flag_al.png" alt="" /> AL
+          </button>
+          <span></span>
+          <button type="button" data-lang="it">
+            <img src="images/flag_it.png" alt="" /> IT
+          </button>
+          <span></span>
+          <button type="button" data-lang="en">
+            <img src="images/flag_en.png" alt="" /> EN
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT: unique content for this page. -->
+    <main class="version-bold-home">
+      <!-- HERO: first screen with headline, primary CTA, and presentation video. -->
+      <section class="bold-home-hero bold-home-hero--cinematic">
+        <div class="bold-home-hero-visual">
+          <video
+            class="bold-home-hero-video"
+            data-src="images/fal-doors-presentation-web.mp4"
+            data-autoplay
+            poster="images/fal-doors.jpg"
+            controls
+            muted
+            playsinline
+            loop
+            preload="none"
+          ></video>
+          <div class="bold-home-hero-shade" aria-hidden="true"></div>
+          <div class="bold-home-hero-media-head">
+            <span>Film prezantues</span><small>FAL DOORS / 00:33</small>
+          </div>
+        </div>
+        <div class="bold-home-hero-copy">
+          <span>FAL DOORS / HYRJE ME POROSI</span>
+          <h1>Dyer që i japin <em>identitet</em> hapësirës.</h1>
+          <p>
+            Projektim, prodhim dhe montim i dyerve të krijuara për arkitekturën
+            tuaj.
+          </p>
+          <div class="bold-home-hero-actions">
+            <a href="version-bold-products.html"
+              >Shiko produktet
+              <i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i
+            ></a>
+            <a href="version-bold-create.html">Krijo hyrjen</a>
+          </div>
+          <div class="bold-home-hero-proof" aria-label="Avantazhet FAL DOORS">
+            <div>
+              <strong>20+ <em>Vite</em></strong
+              ><span>Përvojë</span>
+            </div>
+            <div>
+              <strong>100% <em>Prodhim</em></strong
+              ><span>Me porosi</span>
+            </div>
+            <div>
+              <strong>01 <em>Partner</em></strong
+              ><span>Nga ideja të montimi</span>
+            </div>
+          </div>
+        </div>
+        <div class="bold-home-video-note">
+          <i class="fa-solid fa-circle-play" aria-hidden="true"></i> Film në
+          transmetim · kontrollet mbeten aktive
+        </div>
+      </section>
+
+      <!-- FEATURE STRIP: four short trust/value points below the hero. -->
+      <section
+        class="bold-home-features"
+        aria-label="Pikat kryesore të produkteve"
+      >
+        <div>
+          <i class="fa-solid fa-shield-halved" aria-hidden="true"></i
+          ><span
+            ><strong>Siguri maksimale</strong>Sisteme të avancuara për qetësi
+            dhe mbrojtje.</span
+          >
+        </div>
+        <div>
+          <i class="fa-solid fa-pen-ruler" aria-hidden="true"></i
+          ><span
+            ><strong>Dizajn me porosi</strong>I përshtatur me stilin dhe
+            projektin tënd.</span
+          >
+        </div>
+        <div>
+          <i class="fa-solid fa-cubes-stacked" aria-hidden="true"></i
+          ><span
+            ><strong>Materiale premium</strong>Zgjidhje të forta dhe te
+            qëndrueshme.</span
+          >
+        </div>
+        <div>
+          <i class="fa-solid fa-cloud-sun-rain" aria-hidden="true"></i
+          ><span
+            ><strong>Rezistencë</strong>E menduar për përdorim të përditshëm dhe
+            kushte të ndryshme.</span
+          >
+        </div>
+      </section>
+
+      <section class="bold-home-manifesto">
+        <div class="bold-home-manifesto__media">
+          <img
+            src="images/archive-stone-villa-glass-doors.jpg"
+            alt="Arkitekturë moderne me hyrje të kuruar"
+            loading="lazy"
+          />
+        </div>
+        <div class="bold-home-manifesto__shade" aria-hidden="true"></div>
+        <div class="bold-home-manifesto__content">
+          <span>Hap dyert drejt cilësisë dhe elegancës</span>
+          <h2><i>FAL</i> DOORS</h2>
+          <p>
+            Një hyrje nuk është vetëm kalim. Është kontakti i parë me hapësirën.
+          </p>
+          <a href="version-bold-about.html"
+            >Zbulo FAL
+            <i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i
+          ></a>
+        </div>
+        <div class="bold-home-manifesto__index" aria-hidden="true">
+          01 / IDENTITET
+        </div>
+      </section>
+
+      <section class="bold-home-style-story">
+        <div class="bold-home-style-story__copy">
+          <span>Krijoni stilin tuaj</span>
+          <h2>
+            <span>Zgjidhni derën</span>
+            <span>që tregon historinë</span>
+            <span>e ambientit.</span>
+          </h2>
+          <p>
+            Çdo shtëpi ka një karakter. Ne e përkthejmë atë në ngjyrë, formë,
+            material dhe detaje që përshtaten me arkitekturën tuaj.
+          </p>
+          <p>
+            Me një ekip të specializuar në dizajn dhe prodhim, ju ndihmojmë te
+            kombinoni modelin, finiturat dhe aksesorët në një hyrje unike.
+          </p>
+          <a href="version-bold-create.html"
+            >Krijo stilin tënd
+            <i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i
+          ></a>
+        </div>
+        <div class="bold-home-style-story__visual">
+          <img
+            src="images/archive-luxury-modern-entry-door.jpg"
+            alt="Modele dyersh FAL me kombinime druri dhe metali"
+            loading="lazy"
+          />
+          <div class="bold-home-style-story__seal">
+            <span>Inovacion</span><strong>Elegancë</strong><span>Cilësi</span>
+          </div>
+          <span class="bold-home-style-story__number" aria-hidden="true"
+            >02</span
+          >
+        </div>
+      </section>
+
+      <!-- CAPABILITIES: compact proof points that explain why clients choose FAL DOORS. -->
+      <section
+        class="bold-home-services bold-home-capabilities"
+        id="home-services"
+        aria-labelledby="home-services-title"
+      >
+        <div class="bold-home-services__intro">
+          <span>Pse FAL DOORS</span>
+          <h2 id="home-services-title">Avantazhe <em>që ndihen</em></h2>
+          <p>
+            Para procesit të plotë, këto janë arsyet pse dyert tona mbajnë të
+            njëjtin standard nga projekti i parë deri te montimi final.
+          </p>
+        </div>
+
+        <div class="bold-home-services__grid">
+          <article class="bold-home-service-card">
+            <div class="bold-home-service-card__texture bold-home-service-card__texture--stone">
+              <i class="fa-solid fa-layer-group" aria-hidden="true"></i>
+            </div>
+            <div class="bold-home-service-card__body">
+              <span>01</span>
+              <h3>Materiale të zgjedhura</h3>
+              <p>
+                Finitura, profile dhe struktura të përzgjedhura për përdorim të
+                gjatë, siguri dhe pamje të qëndrueshme.
+              </p>
+              <a href="version-bold-products.html">Shiko produktet <i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="bold-home-service-card">
+            <div class="bold-home-service-card__texture bold-home-service-card__texture--wood">
+              <i class="fa-solid fa-ruler-combined" aria-hidden="true"></i>
+            </div>
+            <div class="bold-home-service-card__body">
+              <span>02</span>
+              <h3>Përshtatje me hapësirën</h3>
+              <p>
+                Çdo derë lidhet me dimensionet, stilin dhe ritmin e ambientit,
+                jo thjesht me një model standard katalogu.
+              </p>
+              <a href="version-bold-create.html">Krijo hyrjen <i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="bold-home-service-card">
+            <div class="bold-home-service-card__texture bold-home-service-card__texture--marble">
+              <i class="fa-solid fa-gauge-high" aria-hidden="true"></i>
+            </div>
+            <div class="bold-home-service-card__body">
+              <span>03</span>
+              <h3>Kontroll në çdo fazë</h3>
+              <p>
+                Nga matjet dhe prodhimi deri te dorëzimi, procesi mbahet i
+                qartë, i matur dhe i kontrolluar nga i njëjti ekip.
+              </p>
+              <a href="#service-process-title">Shiko procesin <i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="bold-home-service-card">
+            <div class="bold-home-service-card__texture bold-home-service-card__texture--ribbed">
+              <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+            </div>
+            <div class="bold-home-service-card__body">
+              <span>04</span>
+              <h3>Siguri dhe jetëgjatësi</h3>
+              <p>
+                Zgjidhje të ndërtuara për përdorim të përditshëm, kushte të
+                ndryshme dhe performancë të qëndrueshme në kohë.
+              </p>
+              <a href="version-bold-about.html">Zbulo standardin <i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="bold-home-services__feature" aria-label="FAL DOORS material and design confidence">
+            <img
+              src="images/archive-showroom-wood-double-door.jpg"
+              alt="Derë dopio prej druri në ekspozitën FAL DOORS"
+              loading="lazy"
+            />
+            <div>
+              <i class="fa-regular fa-star" aria-hidden="true"></i>
+              <strong>Dizajn. Cilësi. Besim.</strong>
+              <span>Një hyrje që duket bukur, mbyllet saktë dhe zgjat.</span>
+            </div>
+          </article>
+
+          <article class="bold-home-service-card">
+            <div class="bold-home-service-card__texture bold-home-service-card__texture--dark">
+              <i class="fa-solid fa-comments" aria-hidden="true"></i>
+            </div>
+            <div class="bold-home-service-card__body">
+              <span>05</span>
+              <h3>Këshillim i qartë</h3>
+              <p>
+                Ju ndihmojmë të zgjidhni modelin, finiturën dhe detajet pa e
+                komplikuar projektin me zgjedhje të panevojshme.
+              </p>
+              <a href="version-bold-contact.html">Flisni me ekipin <i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i></a>
+            </div>
+          </article>
+        </div>
+
+        <div class="bold-home-services__trust" aria-label="Avantazhet FAL DOORS">
+          <article>
+            <i class="fa-solid fa-award" aria-hidden="true"></i>
+            <div>
+              <h3>Materiale Premium</h3>
+              <p>Përzgjedhje e kujdesshme për çdo projekt</p>
+            </div>
+          </article>
+          <article>
+            <i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i>
+            <div>
+              <h3>Punim Artizanal</h3>
+              <p>Detaje të kontrolluara në prodhim</p>
+            </div>
+          </article>
+          <article>
+            <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+            <div>
+              <h3>Garanci 5 Vjet</h3>
+              <p>Siguri dhe besim afatgjatë</p>
+            </div>
+          </article>
+          <article>
+            <i class="fa-solid fa-people-carry-box" aria-hidden="true"></i>
+            <div>
+              <h3>Ekip Profesional</h3>
+              <p>Nga këshillimi deri te dorëzimi</p>
+            </div>
+          </article>
+          <a href="version-bold-quote.html">
+            <i class="fa-regular fa-calendar-check" aria-hidden="true"></i>
+            Kërko Konsultim Falas
+          </a>
+        </div>
+      </section>
+
+      <!-- SERVICE PROCESS: larger professional services panel with image-led cards. -->
+      <section
+        class="bold-service-process"
+        aria-labelledby="service-process-title"
+      >
+        <div class="bold-service-process__hero">
+          <div class="bold-service-process__copy">
+            <span>Cilësi. Precizion. Përkushtim.</span>
+            <h2 id="service-process-title">
+              Shërbime Profesionale <em>Pa Kompromis</em>
+            </h2>
+            <p>
+              Ne FAL Doors ofrojmë shërbime të specializuara në çdo hap te
+              projektit tuaj, nga dizajni deri te eksporti. Çdo detaj, nje
+              standard i lartë.
+            </p>
+          </div>
+          <img
+            src="images/archive-modern-entry-door-room.png"
+            alt="Derë modernë FAL DOORS ne ambient interior premium"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="bold-service-process__grid">
+          <article class="bold-service-process-card bold-service-process-card--dark">
+            <figure>
+              <img
+                src="images/archive-architect-door-design.jpg"
+                alt="Proces dizajnimi për dyer me plan teknik"
+                loading="lazy"
+              />
+            </figure>
+            <div class="bold-service-process-card__body">
+              <i class="fa-solid fa-pencil-ruler" aria-hidden="true"></i>
+              <span>01</span>
+              <h3>Dizajnimi i Dyerve</h3>
+              <p>
+                Ekipi ynë i specializuar i dizajnit krijon vepra unike, duke
+                përdorur teknologji moderne dhe zgjidhje elegante te
+                përshtatura sipas stilit dhe nevojës tuaj.
+              </p>
+              <a href="version-bold-create.html">Mëso më shumë <i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="bold-service-process-card bold-service-process-card--light">
+            <div class="bold-service-process-card__body">
+              <i class="fa-regular fa-square" aria-hidden="true"></i>
+              <span>02</span>
+              <h3>Prodhimi i Dyerve</h3>
+              <p>
+                Me një angazhim të pakompromis për cilësinë, FAL Doors shtron
+                themelet e prodhimit të dyerve të çdo ambienti.
+              </p>
+              <a href="version-bold-products.html">Mëso më shumë <i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i></a>
+            </div>
+            <figure>
+              <img
+                src="images/factory-line.jpg"
+                alt="Linja e prodhimit të dyerve ne fabrike"
+                loading="lazy"
+              />
+            </figure>
+          </article>
+
+          <article class="bold-service-process-card bold-service-process-card--light">
+            <figure>
+              <img
+                src="images/archive-door-installation-craftsman.jpg"
+                alt="Montim profesional i derës ne objekt"
+                loading="lazy"
+              />
+            </figure>
+            <div class="bold-service-process-card__body">
+              <i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i>
+              <span>03</span>
+              <h3>Montimi i Dyerve</h3>
+              <p>
+                Montimi i dyerve në FAL Doors është një përkushtim i
+                precizionit dhe kujdesit maksimal për çdo ambient.
+              </p>
+              <a href="version-bold-contact.html">Mëso më shumë <i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i></a>
+            </div>
+          </article>
+
+          <article class="bold-service-process-card bold-service-process-card--export">
+            <div class="bold-service-process-card__body">
+              <i class="fa-solid fa-globe" aria-hidden="true"></i>
+              <span>04</span>
+              <h3>Eksporti i Dyerve</h3>
+              <p>
+                Eksporti i dyerve është shërbimi ynë i specializuar ne tregjet
+                nderkombetare, me standarde të sigurta dhe cilësi FAL Doors.
+              </p>
+              <a href="version-bold-contact.html">Mëso më shumë <i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i></a>
+            </div>
+            <figure>
+              <img
+                src="images/archive-packaged-door-production.jpg"
+                alt="Dyer të paketuara gati për transport dhe eksport"
+                loading="lazy"
+              />
+            </figure>
+          </article>
+        </div>
+
+        <div class="bold-service-process__trust" aria-label="Avantazhet e shërbimit profesional">
+          <article>
+            <i class="fa-regular fa-gem" aria-hidden="true"></i>
+            <div>
+              <h3>Materiale Premium</h3>
+              <p>Përdorim materiale të zgjedhura me kujdes.</p>
+            </div>
+          </article>
+          <article>
+            <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+            <div>
+              <h3>Garanci 5 Vjet</h3>
+              <p>Siguri dhe besim afatgjatë.</p>
+            </div>
+          </article>
+          <article>
+            <i class="fa-regular fa-user" aria-hidden="true"></i>
+            <div>
+              <h3>Ekip Profesional</h3>
+              <p>Ekspertë të përkushtuar për çdo projekt.</p>
+            </div>
+          </article>
+          <article>
+            <i class="fa-solid fa-crosshairs" aria-hidden="true"></i>
+            <div>
+              <h3>Precizion &amp; Cilësi</h3>
+              <p>Çdo detaj ka rëndësi, çdo herë.</p>
+            </div>
+          </article>
+          <a href="version-bold-quote.html">
+            <i class="fa-regular fa-calendar-check" aria-hidden="true"></i>
+            <span>
+              <strong>Kërko Konsultim</strong>
+              <small>Na kontaktoni sot</small>
+            </span>
+            <i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i>
+          </a>
+        </div>
+      </section>
+
+      <!-- PROJECT PREVIEW: architectural portfolio with editorial hero and client cards. -->
+      <section class="bold-home-projects" aria-labelledby="home-projects-title">
+        <header class="bold-home-projects__head">
+          <div class="bold-home-projects__copy">
+            <span>Projektet e realizuara</span>
+            <h2 id="home-projects-title">Hapësira me <em>identitet.</em></h2>
+            <p>
+              Nga banesat privatë të projektet e mëdha, çdo realizim bashkon
+              dizajnin, precizionin dhe cilësinë FAL DOORS.
+            </p>
+            <a href="version-bold-projects.html"
+              >Eksploro projektet
+              <i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i
+            ></a>
+          </div>
+          <div class="bold-home-projects__art">
+            <i class="bold-home-projects__arc"></i>
+            <i class="bold-home-projects__disc"></i>
+            <img
+              src="images/archive-modern-entry-door-interior.jpg"
+              alt="Derë moderne prej druri në një ambient të ndriçuar natyralisht"
+              loading="lazy"
+            />
+            <div class="bold-home-projects__art-note">
+              <span>FAL / SELECTED WORK</span>
+              <strong>Arkitekturë që fillon të hyrja.</strong>
+              <small>Rezidenciale · Komerciale · Me porosi</small>
+            </div>
+          </div>
+        </header>
+        <div class="bold-home-project-grid">
+          <a
+            class="bold-home-project-card"
+            href="version-bold-projects.html#salillari"
+            data-project="0"
+          >
+            <img
+              src="images/uploads/uploads/2015/05/Downloader.la-62ea93e340018.jpg"
+              alt="Pamje ajrore e projektit Salillari"
+              loading="lazy"
+            />
+            <div class="bold-home-project-card__panel">
+              <strong>01</strong><i></i>
+              <h3>Salillari</h3>
+              <small>Ndërtojmë besimin</small
+              ><span
+                ><i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i
+              ></span>
+            </div>
+          </a>
+          <a
+            class="bold-home-project-card"
+            href="version-bold-projects.html#orion-construction"
+            data-project="1"
+          >
+            <img
+              src="images/uploads/uploads/2015/05/aerial-view-of-neighborhood-bjones27.jpg"
+              alt="Pamje ajrore e projektit Orion Construction"
+              loading="lazy"
+            />
+            <div class="bold-home-project-card__panel">
+              <strong>02</strong><i></i>
+              <h3>Orion <em>Construction</em></h3>
+              <small>Ndërtime që bashkojnë komunitete</small
+              ><span
+                ><i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i
+              ></span>
+            </div>
+          </a>
+          <a
+            class="bold-home-project-card"
+            href="version-bold-projects.html#ales-construction"
+            data-project="2"
+          >
+            <img
+              src="images/uploads/uploads/2016/05/panoramic-windows.jpg"
+              alt="Interior panoramik i projektit Ales Group"
+              loading="lazy"
+            />
+            <div class="bold-home-project-card__panel">
+              <strong>03</strong><i></i>
+              <h3>Ales <em>Construction</em></h3>
+              <small>Hapësira që frymëzojnë jetën</small
+              ><span
+                ><i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i
+              ></span>
+            </div>
+          </a>
+          <a
+            class="bold-home-project-card"
+            href="version-bold-projects.html#tirana-1-construction"
+            data-project="3"
+          >
+            <img
+              src="images/uploads/uploads/2014/08/DJI_0328.jpg"
+              alt="Pamje ajrore e projektit Tirana 1 Construction"
+              loading="lazy"
+            />
+            <div class="bold-home-project-card__panel">
+              <strong>04</strong><i></i>
+              <h3>Tirana 1 <em>Construction</em></h3>
+              <small>Ndërtime me vizion për një të ardhme me të mirë</small
+              ><span
+                ><i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i
+              ></span>
+            </div>
+          </a>
+          <a
+            class="bold-home-project-card"
+            href="version-bold-projects.html#pajtoni-center"
+            data-project="4"
+          >
+            <img
+              src="images/uploads/uploads/2014/08/pr6.jpg"
+              alt="Fasade xhami në projektin Pajtoni Center"
+              loading="lazy"
+            />
+            <div class="bold-home-project-card__panel">
+              <strong>05</strong><i></i>
+              <h3>Pajtoni <em>Center</em></h3>
+              <small>Arkitekturë që lidh njerëzit me hapësirat</small
+              ><span
+                ><i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i
+              ></span>
+            </div>
+          </a>
+          <a
+            class="bold-home-project-card"
+            href="version-bold-projects.html#pepa-group"
+            data-project="5"
+          >
+            <img
+              src="images/uploads/uploads/2016/05/customer@2x.jpg"
+              alt="Derë hyrjeje moderne në projektin Pepa Group"
+              loading="lazy"
+            />
+            <div class="bold-home-project-card__panel">
+              <strong>06</strong><i></i>
+              <h3>Pepa <em>Group</em></h3>
+              <small>Cilësi në çdo detaj, besim në çdo hap</small
+              ><span
+                ><i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i
+              ></span>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <dialog
+        class="golden-project-modal"
+        id="goldenProjectModal"
+        aria-labelledby="goldenModalTitle"
+      >
+        <header class="golden-project-modal__bar">
+          <span><i></i> Rruga e projektit / Paneli i projektit</span>
+          <div>
+            <b data-modal-status>Projekti 01 aktiv</b
+            ><button
+              class="golden-project-modal__close"
+              type="button"
+              aria-label="Mbyll projektin"
+            >
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+        </header>
+        <div class="golden-project-modal__media">
+          <img
+            src="images/uploads/uploads/2015/05/Downloader.la-62ea93e340018.jpg"
+            alt="Projekti Salillari"
+          />
+          <span class="golden-project-modal__index">01 / 06</span>
+          <div class="golden-project-modal__scan" aria-hidden="true"></div>
+        </div>
+        <div class="golden-project-modal__content">
+          <span class="golden-project-modal__eyebrow">Projekt i realizuar</span>
+          <h2 id="goldenModalTitle">Salillari</h2>
+          <strong>Ndërtojmë besimin</strong>
+          <p>Detajet kryesore të projektit.</p>
+          <dl>
+            <div>
+              <dt>Vendndodhja</dt>
+              <dd>Tiranë, Albania</dd>
+            </div>
+            <div>
+              <dt>Tipologjia</dt>
+              <dd>Projekt arkitektonik</dd>
+            </div>
+            <div>
+              <dt>Realizimi</dt>
+              <dd>FAL DOORS</dd>
+            </div>
+          </dl>
+          <div class="golden-project-modal__nav">
+            <button type="button" data-modal-prev>
+              <i class="fa-solid fa-arrow-left-long"></i> Projekti para
+            </button>
+            <a
+              class="golden-project-modal__all"
+              href="version-bold-projects.html"
+              >Shiko projektin <i class="fa-solid fa-arrow-right-long"></i
+            ></a>
+            <button type="button" data-modal-next>
+              Projekti tjetër <i class="fa-solid fa-arrow-right-long"></i>
+            </button>
+          </div>
+        </div>
+        <nav class="golden-project-modal__rail" aria-label="Zgjidh projektin">
+          <button type="button" data-modal-project="0">
+            <img
+              src="images/uploads/uploads/2015/05/Downloader.la-62ea93e340018.jpg"
+              alt=""
+            /><span>01</span>
+          </button>
+          <button type="button" data-modal-project="1">
+            <img
+              src="images/uploads/uploads/2015/05/aerial-view-of-neighborhood-bjones27.jpg"
+              alt=""
+            /><span>02</span>
+          </button>
+          <button type="button" data-modal-project="2">
+            <img
+              src="images/uploads/uploads/2016/05/panoramic-windows.jpg"
+              alt=""
+            /><span>03</span>
+          </button>
+          <button type="button" data-modal-project="3">
+            <img
+              src="images/uploads/uploads/2014/08/DJI_0328.jpg"
+              alt=""
+            /><span>04</span>
+          </button>
+          <button type="button" data-modal-project="4">
+            <img src="images/uploads/uploads/2014/08/pr6.jpg" alt="" /><span
+              >05</span
+            >
+          </button>
+          <button type="button" data-modal-project="5">
+            <img
+              src="images/uploads/uploads/2016/05/customer@2x.jpg"
+              alt=""
+            /><span>06</span>
+          </button>
+        </nav>
+      </dialog>
+
+      <!-- CONFIGURATOR TEASER: visual prompt to start a custom entrance request. -->
+      <section class="bold-home-config">
+        <div class="bold-home-config-copy">
+          <span>Ndërto derën tënde</span>
+          <h2>Krijo hyrjen që i shkon ambientit.</h2>
+          <p>Zgjidh stilin, finiturat dhe detajet që i përshtaten projektit.</p>
+          <a href="version-bold-quote.html"
+            >Fillo Kërkesën
+            <i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i
+          ></a>
+        </div>
+        <div class="bold-home-config-door" aria-hidden="true"></div>
+        <div class="bold-home-options">
+          <span>Profil</span>
+          <div class="bold-home-lines"><i></i><i></i><i></i><i></i></div>
+          <span>Finiturë</span>
+          <div class="bold-home-swatches"><i></i><i></i><i></i><i></i></div>
+          <span>Dorezë</span>
+          <div class="bold-home-handles"><i></i><i></i><i></i><i></i></div>
+        </div>
+      </section>
+
+      <!-- PROCESS STEPS: explains the typical client workflow. -->
+      <section class="bold-home-process">
+        <div>
+          <span>Procesi</span>
+          <h2>Saktësi në çdo hap.</h2>
+        </div>
+        <ol>
+          <li>
+            <i class="fa-solid fa-headset" aria-hidden="true"></i
+            ><strong>01</strong><span>Konsultim</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i
+            ><strong>02</strong><span>Prodhim</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-ruler-combined" aria-hidden="true"></i
+            ><strong>03</strong><span>Finiturë</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-house-circle-check" aria-hidden="true"></i
+            ><strong>04</strong><span>Montim</span>
+          </li>
+        </ol>
+      </section>
+
+      <!-- PROOF: company scale and client voices, ready for final photography. -->
+      <section class="bold-home-proof">
+        <div class="bold-home-proof__backdrop" aria-hidden="true"></div>
+        <div class="bold-home-proof__inner">
+          <div class="bold-home-proof__heading">
+            <span>FAL në shifra</span>
+            <h2>Eksperiencë që matët.<br />Detaje që ndihen.</h2>
+          </div>
+          <div class="bold-home-proof__stats">
+            <article>
+              <i class="fa-regular fa-face-smile" aria-hidden="true"></i>
+              <strong data-count="900" data-suffix="+">0</strong>
+              <span>Klientë</span>
+            </article>
+            <article>
+              <i class="fa-solid fa-gears" aria-hidden="true"></i>
+              <strong data-count="49">0</strong>
+              <span>Makineri</span>
+            </article>
+            <article>
+              <i class="fa-solid fa-people-group" aria-hidden="true"></i>
+              <strong data-count="44">0</strong>
+              <span>Punonjës</span>
+            </article>
+            <article>
+              <i class="fa-regular fa-object-group" aria-hidden="true"></i>
+              <strong data-count="67">0</strong>
+              <span>Modele dyersh</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="bold-home-clients" aria-labelledby="bold-client-title">
+        <div class="bold-home-clients__title">
+          <span>Zëri i klientëve</span>
+          <h2 id="bold-client-title">
+            <span>Hyrje që lënë</span>
+            <span>pershtypje.</span>
+          </h2>
+          <p>
+            Histori reale nga njerez dhe profesioniste që i kane besuar FAL
+            DOORS projektin e tyre.
+          </p>
+        </div>
+        <div class="bold-home-testimonials">
+          <article class="is-active">
+            <div
+              class="bold-home-client-photo"
+              aria-label="Foto klienti për t'u vendosur"
+            >
+              <img
+                src="images/testimonial-edmond.jpg"
+                alt="Montues profesionist duke punuar në një hyrje rezidenciale"
+                loading="lazy"
+              />
+            </div>
+            <div class="bold-home-client-quote">
+              <i class="fa-solid fa-quote-left" aria-hidden="true"></i>
+              <blockquote>
+                Që nga konsultimi i parë deri te montimi, çdo detaj u trajtua me
+                kujdes. Rezultati i dha shtëpisë tonë karakterin që kërkonim.
+              </blockquote>
+              <strong>Edmond K.</strong>
+              <span>Shkodër, Shqipëri</span>
+            </div>
+          </article>
+          <article>
+            <div class="bold-home-client-photo">
+              <img
+                src="images/archive-modern-courtyard-evening-large.jpg"
+                alt="Oborr modern me hyrje të integruar në arkitekturë"
+                loading="lazy"
+              />
+            </div>
+            <div class="bold-home-client-quote">
+              <i class="fa-solid fa-quote-left" aria-hidden="true"></i>
+              <blockquote>
+                Një bashkëpunim i saktë, profesional dhe i qartë. Dera u
+                integrua bukur me arkitekturën dhe cilësia duket në përdorim.
+              </blockquote>
+              <strong>Studio Arkitekturë</strong>
+              <span>Tiranë, Shqipëri</span>
+            </div>
+          </article>
+          <article>
+            <div class="bold-home-client-photo">
+              <img
+                src="images/testimonial-arben.jpg"
+                alt="Ekipi i montimit FAL DOORS duke punuar në Tiranë"
+                loading="lazy"
+              />
+            </div>
+            <div class="bold-home-client-quote">
+              <i class="fa-solid fa-quote-left" aria-hidden="true"></i>
+              <blockquote>
+                FAL Doors është një zgjedhje e shkëlqyeshme për dyer të cilësisë
+                se lartë dhe dizajne të bukura. Dyert e tyre janë të
+                mrekullueshme dhe cilësia është e padiskutueshme. Ekipi i tyre
+                është i kujdesshëm dhe profesionist. Dyert e tyre kane ndryshuar
+                plotësisht pamjen e shtëpisë sime.
+              </blockquote>
+              <strong>Arben</strong>
+              <span>Tiranë, Shqipëri</span>
+            </div>
+          </article>
+          <article>
+            <div class="bold-home-client-photo">
+              <img
+                src="images/testimonial-laura.jpg"
+                alt="Ekipi profesionist duke montuar një derë me xham"
+                loading="lazy"
+              />
+            </div>
+            <div class="bold-home-client-quote">
+              <i class="fa-solid fa-quote-left" aria-hidden="true"></i>
+              <blockquote>
+                FAL Doors na ofroi një zgjedhje të mrekullueshme të dyerve për
+                projektin tonë të ndërtimit. Dyert e tyre janë të personalizuara
+                me kujdes dhe janë një kombinim i shkelqyeshem i
+                funksionalitetit dhe dizajnit. Ekipi i tyre është i përkushtuar
+                për të ofruar cilësi të jashtëzakonshme dhe në jemi të kënaqur
+                me rezultatin përfundimtar.
+              </blockquote>
+              <strong>Laura</strong>
+              <span>Durrës, Shqipëri</span>
+            </div>
+          </article>
+          <div class="bold-home-testimonials__controls">
+            <span class="bold-home-testimonials__index">01 / 04</span>
+            <button
+              type="button"
+              data-testimonial="prev"
+              aria-label="Klienti i meparshem"
+            >
+              <i class="fa-solid fa-arrow-left-long"></i>
+            </button>
+            <button
+              type="button"
+              data-testimonial="next"
+              aria-label="Klienti tjetër"
+            >
+              <i class="fa-solid fa-arrow-right-long"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- FINAL CTA: closing prompt to contact FAL DOORS. -->
+      <section class="bold-home-cta">
+        <!-- Decorative film remains in motion; the crop keeps its oversized logo out of view. -->
+        <video
+          class="bold-home-cta-video"
+          data-src="images/fal-doors-presentation-web.mp4"
+          data-autoplay
+          muted
+          loop
+          playsinline
+          preload="none"
+          aria-hidden="true"
+        ></video>
+        <div>
+          <span>Le të ndërtojme diçka të veçantë</span>
+          <h2>Gati për një hyrje me karakter?</h2>
+          <a href="version-bold-contact.html"
+            >Na Kontakto
+            <i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i
+          ></a>
+        </div>
+      </section>
+    </main>
+
+    <!-- SITE FOOTER: company links, product links, contact info, and social links. -->
+    <footer class="version-bold-footer">
+      <div class="version-bold-footer-grid">
+        <section class="version-bold-footer-brand">
+          <!-- Logo image: brand mark used as the visual home link. -->
+          <img src="images/fal_doors_nav.png" alt="FAL DOORS" />
+          <p>
+            Dyer me porosi, detaje të ngrohta druri dhe zgjidhje elegante per
+            çdo hapësirë.
+          </p>
+        </section>
+
+        <section>
+          <h2>KOMPANIA</h2>
+          <a href="version-bold-about.html">Rreth Nesh</a>
+          <a href="version-bold-about.html">Historia Jonë</a>
+        </section>
+
+        <section>
+          <h2>PRODUKTET</h2>
+          <a href="version-bold-products.html">Dyer të brendshme</a>
+          <a href="version-bold-products.html">Dyer hyrjeje</a>
+          <a href="version-bold-create.html">Krijo hyrjen</a>
+        </section>
+
+        <section>
+          <h2>GALERIA</h2>
+          <a href="version-bold-gallery.html">Projektet</a>
+          <a href="version-bold-gallery.html">Frymëzime</a>
+          <a href="version-bold-products.html">Katalogu</a>
+        </section>
+
+        <section class="version-bold-footer-contact">
+          <h2>KONTAKT</h2>
+          <a href="tel:+355696032648" data-contact="phone">
+            <i class="fa-solid fa-phone" aria-hidden="true"></i>
+            <span>+355 69 603 2648</span>
+          </a>
+          <a href="mailto:info@faldoors.al" data-contact="email">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            <span>info@faldoors.al</span>
+          </a>
+          <a
+            href="https://www.google.com/maps/dir/?api=1&amp;destination=Rruga+Vangjel+Noti%2C+1031%2C+Tirana%2C+Albania"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+            <span>Rruga Vangjel Noti, 1031, Tirana, Albania</span>
+          </a>
+        </section>
+
+        <section class="version-bold-footer-social">
+          <h2>NA NDIQNI</h2>
+          <div>
+            <a
+              href="https://www.instagram.com/fal.doors/?hl=en"
+              target="_blank"
+              rel="noopener"
+              aria-label="Instagram"
+            >
+              <!-- Social icon: Instagram -->
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+              <span class="u-visually-hidden">Instagram</span>
+            </a>
+            <a
+              href="https://www.facebook.com/p/FAL-Doors-61554308700425/"
+              target="_blank"
+              rel="noopener"
+              aria-label="Facebook"
+            >
+              <!-- Social icon: Facebook -->
+              <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+              <span class="u-visually-hidden">Facebook</span>
+            </a>
+            <a
+              href="https://www.tiktok.com/@fal.doors"
+              target="_blank"
+              rel="noopener"
+              aria-label="TikTok"
+            >
+              <!-- Social icon: TikTok -->
+              <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
+              <span class="u-visually-hidden">TikTok</span>
+            </a>
+            <a
+              href="https://www.linkedin.com/company/fal-doors/?trk=public_post_feed-actor-name&originalSubdomain=al"
+              target="_blank"
+              rel="noopener"
+              aria-label="LinkedIn"
+            >
+              <!-- Social icon: LinkedIn -->
+              <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+              <span class="u-visually-hidden">LinkedIn</span>
+            </a>
+            <a
+              href="https://wa.me/355696032648"
+              target="_blank"
+              rel="noopener"
+              aria-label="WhatsApp"
+            >
+              <!-- Social icon: WhatsApp -->
+              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+              <span class="u-visually-hidden">WhatsApp</span>
+            </a>
+          </div>
+        </section>
+      </div>
+
+      <div class="version-bold-footer-bottom">
+        &copy; 2026 FAL DOORS. Të gjitha të drejtat e rezervuara.
+      </div>
+    </footer>
+    <!-- SHARED SCRIPT: enables nav, language, form, and configurator interactions. -->
+    <script src="language.js?v=20260701k"></script>
+    <script src="version-bold.js?v=20260629cta"></script>
+  </body>
+</html>
+
+
+
+
+

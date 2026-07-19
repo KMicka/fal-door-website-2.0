@@ -1,0 +1,110 @@
+/* ==========================================================================
+   Floating social bar
+   --------------------------------------------------------------------------
+   Fixed social shortcuts shared by both design versions.
+   JS hides this component when the footer enters view so it does not compete
+   with the footer's own social/contact links.
+   ========================================================================== */
+
+/* Container: pins compact social buttons near the lower-right viewport. */
+.floating-social {
+  position: fixed;
+  right: 18px;
+  bottom: max(24px, env(safe-area-inset-bottom));
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 1200;
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease,
+    visibility 0.2s ease;
+}
+
+/* Hidden state: shared-ui.js applies this as soon as the footer is visible. */
+.floating-social.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(10px);
+}
+
+/* Link/button base: small footer-matched controls for socials and back-to-top. */
+.floating-social__btn,
+.floating-social__top {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(185, 151, 87, 0.48);
+  border-radius: 9px;
+  color: #d8d0c5;
+  background:
+    linear-gradient(180deg, rgba(255, 236, 198, 0.08), transparent), #17130f;
+  box-shadow: 0 10px 22px rgba(15, 10, 7, 0.24);
+  text-decoration: none;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    background 0.2s ease;
+}
+
+/* Hover state: gives desktop users a clear interactive response. */
+.floating-social__btn:hover,
+.floating-social__top:hover {
+  transform: translateY(-2px);
+  border-color: rgba(185, 151, 87, 0.78);
+  color: #d2bd8a;
+  background:
+    linear-gradient(180deg, rgba(185, 151, 87, 0.16), transparent), #211b15;
+}
+
+.floating-social__btn i,
+.floating-social__top i {
+  font-size: 17px;
+  line-height: 1;
+}
+
+/* Back-to-top button: JS reveals it only after the user scrolls down. */
+.floating-social__top {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  cursor: pointer;
+}
+
+.floating-social__top.is-visible {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+/* Mobile tuning: smaller targets and safe-area spacing for phone browsers. */
+@media (max-width: 700px) {
+  .floating-social {
+    right: 8px;
+    bottom: max(14px, env(safe-area-inset-bottom));
+    gap: 5px;
+  }
+
+  .floating-social__btn:not([aria-label="WhatsApp"]) {
+    display: none;
+  }
+
+  .floating-social__btn,
+  .floating-social__top {
+    width: 34px;
+    height: 34px;
+    border-radius: 7px;
+    background:
+      linear-gradient(180deg, rgba(255, 236, 198, 0.07), transparent),
+      rgba(23, 19, 15, 0.94);
+    box-shadow: 0 6px 16px rgba(15, 10, 7, 0.22);
+  }
+
+  .floating-social__btn i,
+  .floating-social__top i {
+    font-size: 14px;
+  }
+}

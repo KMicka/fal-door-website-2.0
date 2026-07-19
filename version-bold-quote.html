@@ -1,0 +1,430 @@
+﻿<!doctype html>
+<html lang="sq">
+  <head>
+    <!-- HEAD: browser metadata, SEO/social preview tags, fonts, icon library, and page styles. -->
+    <!-- Character encoding: supports normal text rendering across browsers. -->
+    <meta charset="UTF-8" />
+    <!-- Viewport: makes CSS media queries and mobile scaling work correctly. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Dërgoni dimensionet, sasinë dhe preferencat për të marrë një ofertë nga FAL DOORS."
+    />
+    <meta property="og:title" content="Kërkesë ofertë - FAL DOORS" />
+    <meta
+      property="og:description"
+      content="Dërgoni dimensionet, sasinë dhe preferencat për të marrë një ofertë nga FAL DOORS."
+    />
+    <meta property="og:image" content="https://faldoors.al/images/fal-doors.jpg" />
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+    <title>Kërkesë ofertë - FAL DOORS</title>
+    <!-- Fonts: preconnect speeds up Google Fonts loading before the stylesheet request. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=optional"
+      rel="stylesheet"
+    />
+    <!-- Icons: Font Awesome supplies the nav, CTA, contact, feature, and social icons. -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Version stylesheet: all bold-version layout, color, type, and responsive rules. -->
+    <link rel="stylesheet" href="version-bold.css?v=20260629cta" />
+    <!-- Shared floating-social stylesheet: reused by both visual versions. -->
+    <link rel="stylesheet" href="shared-floating.css?v=20260628a" />
+    <link rel="canonical" href="https://faldoors.al/oferte" />
+    <meta property="og:url" content="https://faldoors.al/oferte" />
+  </head>
+  <body>
+    <!-- PAGE STRUCTURE: floating social links, header/navigation, page-specific main content, footer, shared JavaScript. -->
+    <!-- FLOATING SOCIAL BAR: quick external links that stay visible while scrolling. -->
+    <div class="floating-social" aria-label="Linqë të shpejta sociale">
+      <!-- SOCIAL LINK: Facebook page opens in a new tab. -->
+      <a
+        class="floating-social__btn"
+        href="https://www.facebook.com/p/FAL-Doors-61554308700425/"
+        target="_blank"
+        rel="noopener"
+        aria-label="Facebook"
+      >
+        <!-- Social icon: Facebook -->
+        <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+        <span class="u-visually-hidden">Facebook</span>
+      </a>
+      <!-- SOCIAL LINK: Instagram profile opens in a new tab. -->
+      <a
+        class="floating-social__btn"
+        href="https://www.instagram.com/fal.doors/?hl=en"
+        target="_blank"
+        rel="noopener"
+        aria-label="Instagram"
+      >
+        <!-- Social icon: Instagram -->
+        <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+        <span class="u-visually-hidden">Instagram</span>
+      </a>
+      <!-- SOCIAL LINK: TikTok profile opens in a new tab. -->
+      <a
+        class="floating-social__btn"
+        href="https://www.tiktok.com/@fal.doors"
+        target="_blank"
+        rel="noopener"
+        aria-label="TikTok"
+      >
+        <!-- Social icon: TikTok -->
+        <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
+        <span class="u-visually-hidden">TikTok</span>
+      </a>
+      <!-- SOCIAL LINK: LinkedIn company page opens in a new tab. -->
+      <a
+        class="floating-social__btn"
+        href="https://www.linkedin.com/company/fal-doors/?trk=public_post_feed-actor-name&originalSubdomain=al"
+        target="_blank"
+        rel="noopener"
+        aria-label="LinkedIn"
+      >
+        <!-- Social icon: LinkedIn -->
+        <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+        <span class="u-visually-hidden">LinkedIn</span>
+      </a>
+      <!-- SOCIAL LINK: WhatsApp opens a direct chat. -->
+      <a
+        class="floating-social__btn"
+        href="https://wa.me/355696032648"
+        target="_blank"
+        rel="noopener"
+        aria-label="WhatsApp"
+      >
+        <!-- Social icon: WhatsApp -->
+        <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+        <span class="u-visually-hidden">WhatsApp</span>
+      </a>
+      <!-- BACK TO TOP: version-bold.js scrolls the page to the top when this compact arrow is clicked. -->
+      <button
+        class="floating-social__top"
+        type="button"
+        aria-label="Kthehu në krye"
+      >
+        <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+      </button>
+    </div>
+    <!-- SITE HEADER: logo, primary navigation, quote CTA, and language selector. -->
+    <header class="version-bold-header">
+      <!-- LOGO LINK: returns users to the matching version homepage. -->
+      <a
+        class="version-bold-logo"
+        href="index.html"
+        aria-label="FAL DOORS Kryefaqja"
+      >
+        <!-- Logo image: brand mark used as the visual home link. -->
+        <img
+          src="images/fal_doors_nav.png"
+          alt="FAL DOORS"
+          width="142"
+          height="48"
+        />
+      </a>
+      <!-- MOBILE MENU BUTTON: toggles the collapsed navigation on small screens. -->
+      <button
+        class="version-bold-menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="bold-main-nav"
+        aria-label="Hap menunë"
+      >
+        <!-- Icon bars: CSS turns these three empty elements into the hamburger lines. -->
+        <i></i><i></i><i></i>
+      </button>
+
+      <!-- PRIMARY NAVIGATION: main site pages for this version. -->
+      <nav
+        class="version-bold-nav"
+        id="bold-main-nav"
+        aria-label="Navigimi kryesor"
+      >
+        <a href="index.html">KRYEFAQJA</a>
+        <a href="version-bold-about.html">RRETH NESH</a>
+        <a href="version-bold-products.html">PRODUKTET</a>
+        <a href="version-bold-projects.html">PROJEKTET</a>
+        <a href="version-bold-gallery.html">GALERIA</a>
+        <!-- .is-active tells CSS which nav item should show the current-page statë. -->
+        <a href="version-bold-create.html">KRIJO HYRJEN</a>
+        <a href="version-bold-contact.html">KONTAKT</a>
+      </nav>
+
+      <!-- HEADER ACTIONS: quote shortcut and language controls. -->
+      <div class="version-bold-actions">
+        <!-- Quote shortcut: kept outside the main nav so it remains a business CTA. -->
+        <a
+          class="version-bold-quote-link is-active"
+          href="version-bold-quote.html"
+          >Kërkesë ofertë</a
+        >
+        <div class="version-bold-languages" aria-label="Zgjedhja e gjuhës">
+          <!-- Language buttons: JS marks the selected button and reports whether the language is available. -->
+          <button type="button" data-lang="sq">
+            <img src="images/flag_al.png" alt="" /> AL
+          </button>
+          <span></span>
+          <button type="button" data-lang="it">
+            <img src="images/flag_it.png" alt="" /> IT
+          </button>
+          <span></span>
+          <button type="button" data-lang="en">
+            <img src="images/flag_en.png" alt="" /> EN
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT: unique content for this page. -->
+    <main class="fal-quote-page fal-quote-page--bold">
+      <!-- QUOTE INTRO: explains what details the quote form needs. -->
+      <section class="fal-quote-intro">
+        <span>Ofertë</span>
+        <h1>Na dërgoni detajet e projektit.</h1>
+        <p>
+          Plotësoni informacionin kryesor për derën, hapësirën dhe materialin.
+          Ekipi mund të përgatisë një përgjigje më të saktë kur dimensionet dhe
+          preferencat janë të qarta.
+        </p>
+        <div class="fal-quote-note">
+          <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+          <p>
+            Nëse keni foto, plan ose matje, përmendini në mesazh. Ekipi ynë do
+            t'ju udhëzojë menjëherë si t'i dërgoni për vlerësimin e projektit.
+          </p>
+        </div>
+      </section>
+
+      <!-- QUOTE FORM: captures project dimensions, quantity, finish, and message. -->
+      <!-- Form submission is intercepted by version-bold.js for validation/status messages and static email handoff. -->
+      <form
+        class="fal-quote-form"
+        action="mailto:info@faldoors.al"
+        data-static-email="info@faldoors.al"
+        method="post"
+        enctype="multipart/form-data"
+        name="fal-quote"
+        data-async-form
+        data-success-page="version-bold-thank-you.html?form=quote"
+      >
+        <p class="u-visually-hidden" aria-hidden="true">
+          <label>Do not fill this field<input name="bot-field" /></label>
+        </p>
+        <input type="hidden" name="form-name" value="fal-quote" />
+        <!-- Filled automatically from the Creatë Entrance selections stored by version-bold.js. -->
+        <input type="hidden" name="Konfigurimi" data-configuration-field />
+        <label>Emri i plotë<input type="text" name="Emri" required /></label>
+        <label>Email<input type="email" name="Email" required /></label>
+        <label>Telefoni<input type="tel" name="Telefoni" /></label>
+        <label
+          >Lloji i derës<select name="Lloji i derës" required>
+            <option value="">Zgjidhni</option>
+            <option>Derë e brendshme</option>
+            <option>Derë e jashtme</option>
+            <option>Projekt me porosi</option>
+            <option>Set për objekt</option>
+          </select></label
+        >
+        <label
+          >Dimensionet<input
+            type="text"
+            name="Dimensionet"
+            placeholder="p.sh. 90 x 210 cm"
+        /></label>
+        <label
+          >Sasia<input type="number" name="Sasia" min="1" placeholder="1"
+        /></label>
+        <label
+          >Finitura e preferuar<select name="Finitura">
+            <option value="">Nuk jam i sigurt</option>
+            <option>Dru i errët</option>
+            <option>Dru i hapur</option>
+            <option>E zeze / antracit</option>
+            <option>E bardhe / neutrale</option>
+          </select></label
+        >
+        <label class="fal-quote-form-wide"
+          >Mesazhi<textarea
+            name="Mesazhi"
+            rows="5"
+            placeholder="Shkruani detajet e projektit, afatin dhe çdo kërkesë të veçantë."
+            required
+          ></textarea>
+        </label>
+        <div class="fal-file-placeholder" aria-label="Dërgimi i dokumenteve">
+          <i class="fa-regular fa-folder-open" aria-hidden="true"></i>
+          <span>Planet dhe fotot dërgohen pas kontaktit me ekipin</span>
+        </div>
+        <button type="submit">
+          Dërgo Kërkesën
+          <i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i>
+        </button>
+      </form>
+      <section class="fal-quote-guide">
+        <div>
+          <span>Para se ta dërgoni</span>
+          <h2>Tri gjëra që na ndihmojnë t'ju përgjigjemi me saktë.</h2>
+        </div>
+        <article>
+          <i class="fa-solid fa-ruler-combined"></i><strong>Matjet</strong>
+          <p>Gjerësia dhe lartësia e hapësirës, edhe nëse janë paraprake.</p>
+        </article>
+        <article>
+          <i class="fa-regular fa-images"></i><strong>Foto</strong>
+          <p>Një pamje e ambientit dhe e murit ku do të vendoset dera.</p>
+        </article>
+        <article>
+          <i class="fa-regular fa-calendar"></i><strong>Afati</strong>
+          <p>Na tregoni kur planifikoni ta realizoni projektin.</p>
+        </article>
+      </section>
+      <section class="fal-photo-statement fal-quote-proof">
+        <img
+          src="images/wordpress-archive/wp-bedroom-wood-paneling.jpg"
+          alt="Ambient gjumi me panele druri dhe derë të integruar"
+          loading="lazy"
+        />
+        <div>
+          <span>Nga ambienti te detaji</span>
+          <h2>Një ofertë më e saktë fillon me pamjen e plotë.</h2>
+          <p>
+            Na dërgoni përmasat, një foto të hapësirës dhe finiturën që
+            preferoni. Ne e lidhim derën me materialet dhe ritmin e ambientit.
+          </p>
+          <a href="version-bold-gallery.html"
+            >Shiko realizimet <i class="fa-solid fa-arrow-right-long"></i
+          ></a>
+        </div>
+      </section>
+    </main>
+
+    <!-- SITE FOOTER: company links, product links, contact info, and social links. -->
+    <footer class="version-bold-footer">
+      <div class="version-bold-footer-grid">
+        <section class="version-bold-footer-brand">
+          <!-- Logo image: brand mark used as the visual home link. -->
+          <img src="images/fal_doors_nav.png" alt="FAL DOORS" />
+          <p>
+            Dyer me porosi, detaje të ngrohta druri dhe zgjidhje elegante per
+            çdo hapësirë.
+          </p>
+        </section>
+
+        <section>
+          <h2>KOMPANIA</h2>
+          <a href="version-bold-about.html">Rreth Nesh</a>
+          <a href="version-bold-about.html">Historia Jonë</a>
+        </section>
+
+        <section>
+          <h2>PRODUKTET</h2>
+          <a href="version-bold-products.html">Dyer të brendshme</a>
+          <a href="version-bold-products.html">Dyer hyrjeje</a>
+          <a href="version-bold-create.html">Krijo hyrjen</a>
+        </section>
+
+        <section>
+          <h2>GALERIA</h2>
+          <a href="version-bold-gallery.html">Projektet</a>
+          <a href="version-bold-gallery.html">Frymëzime</a>
+          <a href="version-bold-products.html">Katalogu</a>
+        </section>
+
+        <section class="version-bold-footer-contact">
+          <h2>KONTAKT</h2>
+          <a href="tel:+355696032648" data-contact="phone">
+            <i class="fa-solid fa-phone" aria-hidden="true"></i>
+            <span>+355 69 603 2648</span>
+          </a>
+          <a href="mailto:info@faldoors.al" data-contact="email">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            <span>info@faldoors.al</span>
+          </a>
+          <a
+            href="https://www.google.com/maps/dir/?api=1&amp;destination=Rruga+Vangjel+Noti%2C+1031%2C+Tirana%2C+Albania"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+            <span>Rruga Vangjel Noti, 1031, Tirana, Albania</span>
+          </a>
+        </section>
+
+        <section class="version-bold-footer-social">
+          <h2>NA NDIQNI</h2>
+          <div>
+            <a
+              href="https://www.instagram.com/fal.doors/?hl=en"
+              target="_blank"
+              rel="noopener"
+              aria-label="Instagram"
+            >
+              <!-- Social icon: Instagram -->
+              <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+              <span class="u-visually-hidden">Instagram</span>
+            </a>
+            <a
+              href="https://www.facebook.com/p/FAL-Doors-61554308700425/"
+              target="_blank"
+              rel="noopener"
+              aria-label="Facebook"
+            >
+              <!-- Social icon: Facebook -->
+              <i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+              <span class="u-visually-hidden">Facebook</span>
+            </a>
+            <a
+              href="https://www.tiktok.com/@fal.doors"
+              target="_blank"
+              rel="noopener"
+              aria-label="TikTok"
+            >
+              <!-- Social icon: TikTok -->
+              <i class="fa-brands fa-tiktok" aria-hidden="true"></i>
+              <span class="u-visually-hidden">TikTok</span>
+            </a>
+            <a
+              href="https://www.linkedin.com/company/fal-doors/?trk=public_post_feed-actor-name&originalSubdomain=al"
+              target="_blank"
+              rel="noopener"
+              aria-label="LinkedIn"
+            >
+              <!-- Social icon: LinkedIn -->
+              <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+              <span class="u-visually-hidden">LinkedIn</span>
+            </a>
+            <a
+              href="https://wa.me/355696032648"
+              target="_blank"
+              rel="noopener"
+              aria-label="WhatsApp"
+            >
+              <!-- Social icon: WhatsApp -->
+              <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+              <span class="u-visually-hidden">WhatsApp</span>
+            </a>
+          </div>
+        </section>
+      </div>
+
+      <div class="version-bold-footer-bottom">
+        &copy; 2026 FAL DOORS. Të gjitha të drejtat e rezervuara.
+      </div>
+    </footer>
+    <!-- SHARED SCRIPT: enables nav, language, form, and configurator interactions. -->
+    <script src="language.js?v=20260701k"></script>
+    <script src="version-bold.js?v=20260629cta"></script>
+  </body>
+</html>
+
+
+
+
+

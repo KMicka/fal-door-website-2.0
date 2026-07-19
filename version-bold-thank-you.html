@@ -1,0 +1,95 @@
+﻿<!doctype html>
+<html lang="sq">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <meta http-equiv="refresh" content="45; url=index.html" />
+    <title>Faleminderit - FAL DOORS</title>
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=optional"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="version-bold.css?v=20260624c" />
+  </head>
+  <body class="fal-thank-you-body">
+    <main class="fal-thank-you-page fal-thank-you-page--return">
+      <a class="fal-thank-you-brand" href="index.html">
+        <img src="images/fal_doors_nav.png" alt="FAL DOORS" />
+      </a>
+
+      <section class="fal-thank-you-return" aria-labelledby="thank-you-title">
+        <div class="fal-thank-you-return__mark" aria-hidden="true">
+          <i class="fa-solid fa-check"></i>
+        </div>
+
+        <div class="fal-thank-you-return__copy">
+          <span>Kërkesa u dërgua</span>
+          <h1 id="thank-you-title">Faleminderit</h1>
+          <p data-thank-message>
+            Mesazhi juaj u regjistrua. Ekipi i FAL DOORS do t'ju kontaktojë sa
+            me shpejt për hapat e ardhshëm.
+          </p>
+        </div>
+
+        <div class="fal-thank-you-return__meta">
+          <p>Referenca <b data-thank-referencë>000000</b></p>
+          <p>
+            Rikthim automatik në kryefaqe pas
+            <b><span data-return-countdown>45</span>s</b>
+          </p>
+        </div>
+
+        <div class="fal-thank-you-return__progress" aria-hidden="true">
+          <span></span>
+        </div>
+
+        <div class="fal-thank-you-actions">
+          <a href="index.html"
+            >Kthehu tani <i class="fa-solid fa-arrow-right-long"></i
+          ></a>
+          <a href="version-bold-products.html">Shiko produktet</a>
+        </div>
+      </section>
+    </main>
+    <script>
+      (() => {
+        const returnUrl = "index.html";
+        let secondsLeft = 45;
+        const isQuote =
+          new URLSearchParams(window.location.search).get("form") === "quote";
+        const countdown = document.querySelector("[data-return-countdown]");
+
+        document.querySelector("[data-thank-referencë]").textContent =
+          `${new Date().toISOString().slice(2, 10).replaceAll("-", "")}-${Math.floor(100 + Math.random() * 900)}`;
+
+        if (isQuote) {
+          document.querySelector("[data-thank-message]").textContent =
+            "Kërkesa juaj për ofertë u regjistrua. Ekipi i FAL DOORS do t'ju kontaktojë për detajet, matjet dhe opsionet e projektit.";
+        }
+
+        const timer = window.setInterval(() => {
+          secondsLeft -= 1;
+          if (countdown) countdown.textContent = String(secondsLeft);
+          if (secondsLeft <= 0) {
+            window.clearInterval(timer);
+            window.location.assign(returnUrl);
+          }
+        }, 1000);
+      })();
+    </script>
+    <script src="language.js?v=20260701k"></script>
+  </body>
+</html>
+
+
+
+
+
