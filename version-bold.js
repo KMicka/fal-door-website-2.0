@@ -183,7 +183,13 @@ document.querySelectorAll(".version-bold-menu-toggle").forEach((button) => {
     document.body.classList.toggle("bold-nav-open", !isOpen);
   });
 
-  /* Menu links use normal browser navigation. The destination page starts closed. */
+  /* Follow touch/pointer selections before the animated drawer can swallow the click. */
+  nav.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("pointerup", () => {
+      if (!document.body.classList.contains("bold-nav-open")) return;
+      window.location.href = link.href;
+    });
+  });
 
   /* Escape closes the drawer, matching normal dialog/navigation behavior. */
   document.addEventListener("keydown", (event) => {
