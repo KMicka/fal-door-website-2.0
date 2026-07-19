@@ -183,18 +183,7 @@ document.querySelectorAll(".version-bold-menu-toggle").forEach((button) => {
     document.body.classList.toggle("bold-nav-open", !isOpen);
   });
 
-  nav.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", (event) => {
-      /* Close the drawer and explicitly follow the chosen page on touch layouts. */
-      button.setAttribute("aria-expanded", "false");
-      document.body.classList.remove("bold-nav-open");
-
-      if (window.matchMedia("(max-width: 1050px)").matches) {
-        event.preventDefault();
-        window.location.assign(link.href);
-      }
-    });
-  });
+  /* Menu links use normal browser navigation. The destination page starts closed. */
 
   /* Escape closes the drawer, matching normal dialog/navigation behavior. */
   document.addEventListener("keydown", (event) => {
