@@ -15968,3 +15968,108 @@ body {
     min-height: 380px;
   }
 }
+
+/* ============================================================
+   Multilingual layout hardening
+   Keep longer Albanian, Italian, and English copy inside its
+   component at every responsive width.
+   ============================================================ */
+main :where(section, article, div, header, nav),
+footer :where(section, article, div, nav),
+.version-bold-header > * {
+  min-width: 0;
+}
+
+main :where(h1, h2, h3, h4, p, li, label, strong),
+footer :where(h2, p, a, span),
+.version-bold-nav a {
+  overflow-wrap: anywhere;
+  word-break: normal;
+  hyphens: auto;
+}
+
+main :where(h1, h2, h3, h4) {
+  text-wrap: balance;
+}
+
+main :where(p, li, label),
+footer :where(p, a) {
+  text-wrap: pretty;
+}
+
+main :where(a, button),
+.version-bold-nav a,
+.version-bold-quote-link,
+.version-bold-contact-form button,
+.fal-quote-form button {
+  max-width: 100%;
+  white-space: normal;
+}
+
+html:is([lang="en"], [lang="it"]) main :where(h1, h2, h3, h4),
+html:is([lang="en"], [lang="it"]) main :where(a, button, strong) {
+  letter-spacing: min(0.08em, 1px);
+}
+
+@media (min-width: 761px) and (max-width: 900px) {
+  .bold-home-project-card {
+    min-height: 360px;
+    aspect-ratio: auto;
+  }
+}
+
+@media (max-width: 760px) {
+  main :where(h1, h2, h3, h4) {
+    max-width: 100%;
+  }
+
+  main :where(a, button),
+  .version-bold-contact-form button,
+  .fal-quote-form button {
+    height: auto;
+    min-height: 44px;
+    line-height: 1.25;
+  }
+
+  .version-bold-nav a {
+    height: auto;
+    min-height: 56px;
+    padding-block: 12px;
+    line-height: 1.25;
+    text-align: center;
+  }
+}
+
+@media (max-width: 360px) {
+  .version-bold-header {
+    grid-template-columns: 92px minmax(0, 1fr) 40px;
+    gap: 6px;
+    padding-inline: 10px;
+  }
+
+  .version-bold-logo {
+    width: 92px;
+  }
+
+  .version-bold-menu-toggle {
+    width: 40px;
+    height: 40px;
+  }
+
+  .version-bold-languages {
+    width: 100%;
+    justify-content: flex-end;
+    gap: 3px;
+  }
+
+  .version-bold-languages button,
+  .version-bold-languages button[data-lang="it"],
+  .version-bold-languages button[data-lang="en"] {
+    min-width: 24px;
+    padding-inline: 3px;
+  }
+
+  .version-bold-languages img {
+    display: none;
+  }
+}
