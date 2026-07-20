@@ -288,6 +288,10 @@ document.querySelectorAll("[data-async-form]").forEach((form) => {
       });
 
       if (!response.ok) throw new Error("Form endpoint failed");
+      const result = await response.json();
+      if (String(result.success).toLowerCase() !== "true") {
+        throw new Error(result.message || "Form endpoint rejected submission");
+      }
       status.textContent = messages.success;
       status.dataset.state = "success";
       form.reset();
