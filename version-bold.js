@@ -282,9 +282,11 @@ document.querySelectorAll("[data-async-form]").forEach((form) => {
 
       const response = await fetch(endpoint, {
         method: "POST",
-        /* FormData supports external form endpoints and preserves uploaded files. */
-        body: data,
-        headers: { Accept: "application/json" },
+        body: JSON.stringify(Object.fromEntries(data.entries())),
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
       });
 
       if (!response.ok) throw new Error("Form endpoint failed");
